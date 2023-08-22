@@ -68,3 +68,49 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# My Portfolio
+
+Welcome to my personal portfolio website! This README provides an overview of the sections and features of my portfolio.
+
+## Overview
+
+My portfolio showcases my skills, projects, and contact information. It is designed to provide visitors with an introduction to who I am and the work I've done.
+
+## Sections
+
+### Navbar
+
+The navigation bar at the top of the page helps visitors navigate to different sections of the portfolio. It includes links to the Home, About Me, Projects, and Contact sections.
+
+### Home
+
+The Home section provides a brief welcome message and introduction. It features a background image and is designed to be visually engaging.
+
+### About Me
+
+The About Me section gives visitors more information about my background, skills, and interests. It includes a photo of me and a short biography.
+
+### Projects
+
+The Projects section highlights some of the key projects I've worked on. Each project is displayed as a card with a title and a GitHub link. Clicking on a card reveals more information about the project.
+
+### Contact
+
+The Contact section provides different ways for visitors to get in touch with me. It includes links to my email address and social media profiles.
+
+### Footer
+
+The footer appears at the bottom of the page and contains copyright information and additional links.
+
+## Technologies Used
+
+- HTML
+- CSS (including Bootstrap)
+- JavaScript
+- React (for building components)
+- GitHub Pages (for deployment)
+
+---
+
+Thank you for visiting my portfolio and taking the time to learn more about me and my work!

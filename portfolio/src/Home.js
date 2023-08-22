@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import './Home.css';
+import React from 'react';
+import './Home.css'; // Import the CSS file for styling
 
 function Home() {
-  const [showContent, setShowContent] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 500); // Delay for 500 milliseconds
-
-    return () => clearTimeout(timer); // Clear the timer on unmount
-  }, []);
-
   return (
     <section id="home" className="home">
-      <div className={`content ${showContent ? 'slide-up' : ''}`}>
-        <h1>Welcome to My Portfolio</h1>
-        <h4>Hi, I am Jiya Thakur, a web developer...</h4>
+      <div className="content">
+      <div class="wrapper_one">
+        <div class="drop-main">
+            <div class="w">W</div>
+            <div class="e">E</div>
+            <div class="l">L</div>
+            <div class="c">C</div>
+            <div class="o">O</div>
+            <div class="m">M</div>
+            <div class="u">E</div>
+            <div class="s">!</div>
+        </div>
+      </div>
+        <h4>Hi, I am <span>Jiya Thakur</span>, a web developer...</h4>
       </div>
     </section>
   );

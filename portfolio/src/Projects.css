@@ -111,11 +111,11 @@
 }
 @media (max-width: 768px) {
   .projects-container {
-    justify-content: center; /* Center the cards on smaller screens */
+    justify-content: center; 
   }
 
   .project-card {
-    width: calc(100% - 40px); /* Adjust the width for full width cards */
-    margin-right: 0; /* Remove the right margin */
+    width: calc(100% - 40px); 
+    margin-right: 0; 
   }
 }

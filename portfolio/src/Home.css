@@ -1,67 +1,151 @@
-/* Reset some default styles */
 body, h1, p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Apply background image to the section */
-  .home {
-    position: relative;
-    background-image: url('https://e0.pxfuel.com/wallpapers/119/436/desktop-wallpaper-black-background-pics.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 80px); /* Adjust height to account for navbar height */
-    color: white;
-    display: flex; /* Use flex layout to position content */
-  }
-  
-  /* Center the content vertically */
-  .content {
-    display: flex; /* Use flex layout for content alignment */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center vertically */
-    padding-left: 20px; /* Add some spacing from the left edge */
-  }
-  
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 8px whitesmoke; /* Add margin to create space between h1 and p */
-  }
-  
-  h4 {
-    font-size: 2rem;
-    text-shadow: 2px 2px 8px whitesmoke;
-  }
-  @media (max-width: 768px) {
-    .home {
-        height: calc(100vh - 60px); /* Adjust height to account for smaller navbar height */
-    }
-
-    .content {
-        padding: 20px; /* Add padding all around on smaller screens */
-    }
-
-    h1 {
-        font-size: 2.5rem; /* Decrease font size for smaller screens */
-        margin-bottom: 10px; /* Adjust margin for smaller screens */
-    }
-
-    h4 {
-        font-size: 1.5rem; /* Decrease font size for smaller screens */
-    }
+  margin: 0;
+  padding: 0;
 }
-@keyframes slide-up {
+
+
+.home {
+  position: relative;
+  background-image: url('https://e0.pxfuel.com/wallpapers/119/436/desktop-wallpaper-black-background-pics.jpg'); 
+  background-position: center;
+  height: calc(100vh - 80px); 
+  color: white;
+  display: flex;
+}
+
+
+.content {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  padding-left: 20px; 
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px whitesmoke; 
+}
+
+h4 {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+h4 span{
+  color: #925697;
+}
+.drop-main {
+  display: flex;
+  font-size: 7rem;
+  margin: 1.5rem;
+  justify-content: center;
+}
+.w {
+  opacity: 0;
+  animation: drop 0.4s linear forwards;
+  color: white;
+}
+.e {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.2s;
+  color: white;
+}
+.l {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.4s;
+  color: white;
+}
+.c {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.6s;
+  color: white;
+}
+.o {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.8s;
+  color: white;
+}
+.m{
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.0s;
+  color: white;
+}
+.u {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.2s;
+  color: white;
+}
+.s{
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.4s;
+  color: white;
+}
+
+@keyframes drop {
   0% {
-    opacity: 0;
-    transform: translateY(20px);
+      transform: translateY(-200px);
+      opacity: 0;
+  }
+  50% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+  65% {
+      transform: translateY(-17px);
+      opacity: 1;
+  }
+  75% {
+      transform: translateY(-22px);
+      opacity: 1;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+      transform: translateY(0px);
+      opacity: 1;
   }
 }
+@media (max-width: 768px) {
+  .home {
+      height: calc(100vh - 60px); 
+  }
 
-.content.slide-up {
-  animation: slide-up 0.5s ease forwards; /* Apply the animation to .content */
+  .content {
+      padding: 20px; 
+  }
+
+  h1 {
+      font-size: 2.5rem; 
+      margin-bottom: 10px; 
+  }
+
+  h4 {
+      font-size: 1.5rem; 
+  }
+  .wrapper_one{
+    width: auto !important ;
+    font-size: 1.5rem;
+  }
+  .w {
+    font-size: 1.5rem;
+  }
+  .e {
+    font-size: 1.5rem;
+  }
+  .l {
+    font-size: 1.5rem;
+  }
+  .c {
+    font-size: 1.5rem;
+  }
+  .o {
+    font-size: 1.5rem;
+  }
+  .m{
+    font-size: 1.5rem;
+  }
+  .u {
+    font-size: 1.5rem;
+  }
+  .s{
+    font-size: 1.5rem;
+  }
 }
