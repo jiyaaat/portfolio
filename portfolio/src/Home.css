@@ -1,0 +1,67 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply background image to the section */
+  .home {
+    position: relative;
+    background-image: url('https://e0.pxfuel.com/wallpapers/119/436/desktop-wallpaper-black-background-pics.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px); /* Adjust height to account for navbar height */
+    color: white;
+    display: flex; /* Use flex layout to position content */
+  }
+  
+  /* Center the content vertically */
+  .content {
+    display: flex; /* Use flex layout for content alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    padding-left: 20px; /* Add some spacing from the left edge */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px whitesmoke; /* Add margin to create space between h1 and p */
+  }
+  
+  h4 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px whitesmoke;
+  }
+  @media (max-width: 768px) {
+    .home {
+        height: calc(100vh - 60px); /* Adjust height to account for smaller navbar height */
+    }
+
+    .content {
+        padding: 20px; /* Add padding all around on smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Decrease font size for smaller screens */
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+
+    h4 {
+        font-size: 1.5rem; /* Decrease font size for smaller screens */
+    }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content.slide-up {
+  animation: slide-up 0.5s ease forwards; /* Apply the animation to .content */
+}
