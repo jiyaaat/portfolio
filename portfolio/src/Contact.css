@@ -7,7 +7,7 @@
 
 .contact h5 {
   color: #999;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .contact h1 {
@@ -18,7 +18,7 @@
 
 .contact_container {
   display: flex;
-  justify-content: center; /* Center the cards horizontally */
+  justify-content: center; 
   gap: 2rem;
 }
 
@@ -47,6 +47,7 @@
   margin-top: 20px;
   margin-bottom: 10px;
   color: white;
+  margin-left: 0px;
 }
 
 .contact_option h5 {
