@@ -49,9 +49,6 @@ function Projects() {
           {projectsData.map((project, index) => (
             <div className="project-card" style={{ backgroundImage: project.backgroundImage }} key={index}>
               <div className="project-card-content">
-                <div className="front-content">
-                  
-                </div>
                 <div className="back-content">
                   <div className="back-header">
                     <h3>{project.title}</h3>
